@@ -1,48 +1,52 @@
 _________________________________________________________________
-                          PoisonFood 
+                          FactoryFurnace 
 ________________________________________________________________
  ________________
 | 1.Introduction |
-| 2.Usage        |
-| 3.Bugs         |
-| 4.Changelog    |
-| 5.Copyright    |
+| 2.Dependencies |
+| 3.Usage        |
+| 4.Bugs         |
+| 5.Changelog    |
+| 6.Copyright    |
 |________________|
 ________________________________________________________________
 1.Introduction
 _________________________________________________________________
 
-PoisonFood is a Bukkit plugin writen by PrivateAlpha. It allows
-for various minecraft food types to have the chance of poisoning
-the player consuming it. This is achieved by rolling a random
-between 1-100 and then asessing if the roll lies between 
-1 - <Chance> modifier.
+FactoryFurnace is a one-of-a-kind plugin for bukkit. It works as
+a furnace reloader, taking items from multiple chests and feeding
+them into the furnace.
+
+Note: The plugin does not smelt the items it only loads the
+furnace with whatever is in the chests
 _________________________________________________________________
-2.Usage
+2.Dependencies
+_________________________________________________________________
+
+
+_________________________________________________________________
+3.Usage
 _________________________________________________________________
 
 Simply drop the plugin into your plugins folder and reload your
 server. It will generate its own folder and config. To edit the
 config simply open with a text editor and chage the values.
 
-Poison*Chance = chance out of 100 that it will be poisoned
-Poison*Damage = amount of damage dealt to the player
-Damage is measured in half hearts i.e. 5 = 2.5Hearts
 _________________________________________________________________
-3.Bugs
+4.Bugs
 ________________________________________________________________
 
-Please report all bugs here: http://github.com/PrivateAlpha/PoisonFood/issues
+Please report all bugs here: http://github.com/PrivateAlpha/FactoryFurnace/issues
 
 Also remember to include(use pastebin.com) the .log file within 
 plugins/PoisonFood/
 ________________________________________________________________
-4.Changelog
+5.Changelog
 _________________________________________________________________
 
-1.0 - first release
+0.2 - alpha
 _________________________________________________________________
-5.Copyright
+6.Copyright
 ________________________________________________________________
 
 Copyright © PrivateAlpha 2011 All Rights Reserved. No part of this plugin may be reproduced without written consent from the author.
