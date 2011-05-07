@@ -1,0 +1,23 @@
+name: FactoryFurnace
+main: com.PrivateAlpha.bukkit.Factory.Furnace.FactoryFurnace
+version: 0.2
+website: http://forums.bukkit.org
+authors:
+  - PrivateAlpha
+description: An Auto-Reloading furnace plug-in
+commands:
+  FactoryFurnace:
+    description: <add>adds a furnace; <remove>removes a furnace; <info>returns info on a furnace
+    usage: /FactoryFurnace <add|remove|info> [Player name]
+  ffa:
+    description: adds a furnace
+    usage: /ffa [Player name]
+    permission: FactoryFurnace.add
+  ffr:
+    description: removes a furnace
+    usage: /ffr
+    permission: FactoryFurnace.remove
+  ffi:
+    description: get info about a furnace
+    usage: /ffi
+    permission: FactoryFurnace.info  
