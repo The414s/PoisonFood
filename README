@@ -19,35 +19,35 @@ them into the furnace.
 
 Note: The plugin does not smelt the items it only loads the
 furnace with whatever is in the chests
-_________________________________________________________________
+________________________________________________________________
 2.Dependencies
-_________________________________________________________________
+________________________________________________________________
 
-
-_________________________________________________________________
+sqlitejdbc-v056.jar
+"Permissions" the plugin
+________________________________________________________________
 3.Usage
-_________________________________________________________________
+________________________________________________________________
 
 Simply drop the plugin into your plugins folder and reload your
 server. It will generate its own folder and config. To edit the
 config simply open with a text editor and chage the values.
 
-_________________________________________________________________
+________________________________________________________________
 4.Bugs
 ________________________________________________________________
 
-Please report all bugs here: http://github.com/PrivateAlpha/FactoryFurnace/issues
+Please report all bugs here: http://github.com/TeamRA/FactoryFurnace/issues
 
-Also remember to include(use pastebin.com) the .log file within 
-plugins/PoisonFood/
 ________________________________________________________________
 5.Changelog
-_________________________________________________________________
+________________________________________________________________
 
+0.3 - fixed namespace
 0.2 - alpha
-_________________________________________________________________
+________________________________________________________________
 6.Copyright
 ________________________________________________________________
 
-Copyright © PrivateAlpha 2011 All Rights Reserved. No part of this plugin may be reproduced without written consent from the author.
+-
 

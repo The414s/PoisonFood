@@ -1,9 +1,9 @@
 name: FactoryFurnace
-main: com.PrivateAlpha.bukkit.Factory.Furnace.FactoryFurnace
+main: com.github.TeamRA.FactoryFurnace.FactoryFurnace
 version: 0.2
-website: http://forums.bukkit.org
+website: 
 authors:
-  - PrivateAlpha
+  - TeamRA
 description: An Auto-Reloading furnace plug-in
 commands:
   FactoryFurnace:
