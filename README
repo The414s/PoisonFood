@@ -32,7 +32,7 @@ _________________________________________________________________
 3.Bugs
 ________________________________________________________________
 
-Please report all bugs here: http://github.com/PrivateAlpha/PoisonFood/issues
+Please report all bugs here: http://github.com/TeamRA/PoisonFood/issues
 
 Also remember to include(use pastebin.com) the .log file within 
 plugins/PoisonFood/
@@ -40,10 +40,11 @@ ________________________________________________________________
 4.Changelog
 _________________________________________________________________
 
+1.1 - fixed namespace
 1.0 - first release
 _________________________________________________________________
 5.Copyright
 ________________________________________________________________
 
-Copyright © PrivateAlpha 2011 All Rights Reserved. No part of this plugin may be reproduced without written consent from the author.
+-
 
