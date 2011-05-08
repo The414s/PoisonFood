@@ -1,4 +1,5 @@
 _________________________________________________________________
+<<<<<<< HEAD
                           PoisonFood 
 ________________________________________________________________
  ________________
@@ -7,11 +8,23 @@ ________________________________________________________________
 | 3.Bugs         |
 | 4.Changelog    |
 | 5.Copyright    |
+=======
+                          FactoryFurnace 
+________________________________________________________________
+ ________________
+| 1.Introduction |
+| 2.Dependencies |
+| 3.Usage        |
+| 4.Bugs         |
+| 5.Changelog    |
+| 6.Copyright    |
+>>>>>>> f412083b070829f621a6fd54eb451fb89b02dce7
 |________________|
 ________________________________________________________________
 1.Introduction
 _________________________________________________________________
 
+<<<<<<< HEAD
 PoisonFood is a Bukkit plugin writen by PrivateAlpha. It allows
 for various minecraft food types to have the chance of poisoning
 the player consuming it. This is achieved by rolling a random
@@ -20,11 +33,29 @@ between 1-100 and then asessing if the roll lies between
 _________________________________________________________________
 2.Usage
 _________________________________________________________________
+=======
+FactoryFurnace is a one-of-a-kind plugin for bukkit. It works as
+a furnace reloader, taking items from multiple chests and feeding
+them into the furnace.
+
+Note: The plugin does not smelt the items it only loads the
+furnace with whatever is in the chests
+________________________________________________________________
+2.Dependencies
+________________________________________________________________
+
+sqlitejdbc-v056.jar
+"Permissions" the plugin
+________________________________________________________________
+3.Usage
+________________________________________________________________
+>>>>>>> f412083b070829f621a6fd54eb451fb89b02dce7
 
 Simply drop the plugin into your plugins folder and reload your
 server. It will generate its own folder and config. To edit the
 config simply open with a text editor and chage the values.
 
+<<<<<<< HEAD
 Poison*Chance = chance out of 100 that it will be poisoned
 Poison*Damage = amount of damage dealt to the player
 Damage is measured in half hearts i.e. 5 = 2.5Hearts
@@ -44,6 +75,22 @@ _________________________________________________________________
 1.0 - first release
 _________________________________________________________________
 5.Copyright
+=======
+________________________________________________________________
+4.Bugs
+________________________________________________________________
+
+Please report all bugs here: http://github.com/TeamRA/FactoryFurnace/issues
+
+________________________________________________________________
+5.Changelog
+________________________________________________________________
+
+0.3 - fixed namespace
+0.2 - alpha
+________________________________________________________________
+6.Copyright
+>>>>>>> f412083b070829f621a6fd54eb451fb89b02dce7
 ________________________________________________________________
 
 -
