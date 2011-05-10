@@ -1,97 +1,83 @@
 _________________________________________________________________
-<<<<<<< HEAD
                           PoisonFood 
 ________________________________________________________________
- ________________
-| 1.Introduction |
-| 2.Usage        |
-| 3.Bugs         |
-| 4.Changelog    |
-| 5.Copyright    |
-=======
-                          FactoryFurnace 
-________________________________________________________________
- ________________
-| 1.Introduction |
-| 2.Dependencies |
-| 3.Usage        |
-| 4.Bugs         |
-| 5.Changelog    |
-| 6.Copyright    |
->>>>>>> f412083b070829f621a6fd54eb451fb89b02dce7
-|________________|
+ _____________________
+| 1.Introduction      |
+| 2.Dependencies      |
+| 3.Compatibility     |
+| 4.Usage             |
+| 5.Bugs and Features |
+| 6.Changelog         |
+| 7.Copyright         |
+| 8.Download          |
+|_____________________|
 ________________________________________________________________
 1.Introduction
 _________________________________________________________________
 
-<<<<<<< HEAD
 PoisonFood is a Bukkit plugin writen by PrivateAlpha. It allows
 for various minecraft food types to have the chance of poisoning
 the player consuming it. This is achieved by rolling a random
 between 1-100 and then asessing if the roll lies between 
 1 - <Chance> modifier.
-_________________________________________________________________
-2.Usage
-_________________________________________________________________
-=======
-FactoryFurnace is a one-of-a-kind plugin for bukkit. It works as
-a furnace reloader, taking items from multiple chests and feeding
-them into the furnace.
-
-Note: The plugin does not smelt the items it only loads the
-furnace with whatever is in the chests
 ________________________________________________________________
 2.Dependencies
 ________________________________________________________________
 
-sqlitejdbc-v056.jar
-"Permissions" the plugin
+The414sUtilityLibrary 1.0.jar 
+>>github.com/downloads/The414s/The414sUtilityLibrary/The414sUtilityLibrary%201.0.jar
 ________________________________________________________________
-3.Usage
+3.Compatibility     
 ________________________________________________________________
->>>>>>> f412083b070829f621a6fd54eb451fb89b02dce7
+
+
+________________________________________________________________
+4.Usage
+________________________________________________________________
 
 Simply drop the plugin into your plugins folder and reload your
 server. It will generate its own folder and config. To edit the
 config simply open with a text editor and chage the values.
 
-<<<<<<< HEAD
 Poison*Chance = chance out of 100 that it will be poisoned
 Poison*Damage = amount of damage dealt to the player
 Damage is measured in half hearts i.e. 5 = 2.5Hearts
-_________________________________________________________________
-3.Bugs
+
+________________________________________________________________
+5.Bugs and Features
 ________________________________________________________________
 
-Please report all bugs here: http://github.com/TeamRA/PoisonFood/issues
+Please report all bugs here:
+ http://github.com/The414s/PoisonFood/issues
 
 Also remember to include(use pastebin.com) the .log file within 
 plugins/PoisonFood/
 ________________________________________________________________
-4.Changelog
-_________________________________________________________________
-
-1.1 - fixed namespace
-1.0 - first release
-_________________________________________________________________
-5.Copyright
-=======
-________________________________________________________________
-4.Bugs
+6.Changelog
 ________________________________________________________________
 
-Please report all bugs here: http://github.com/TeamRA/FactoryFurnace/issues
-
+1.1 - Fixed Namespace
+1.0 - Release
 ________________________________________________________________
-5.Changelog
-________________________________________________________________
-
-0.3 - fixed namespace
-0.2 - alpha
-________________________________________________________________
-6.Copyright
->>>>>>> f412083b070829f621a6fd54eb451fb89b02dce7
+7.Copyright
 ________________________________________________________________
 
--
+                      <PoisonFood>
+            Copyright (C) <2011>  <The414s>
 
+This program is free software:
+you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or any later version.
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program. If not,see <www.gnu.org/licenses/> .
+
+________________________________________________________________
+7.Download
+________________________________________________________________
+
+1.1 - http://github.com/downloads/The414s/PoisonFood/PoisonFood%201.1.jar
+1.0 - here

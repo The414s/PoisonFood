@@ -1,4 +1,4 @@
-package com.github.TeamRA.PoisonFood;
+package com.github.The414s.PoisonFood;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -9,39 +9,43 @@ import java.util.Properties;
 import java.util.logging.FileHandler;
 import java.util.logging.Handler;
 import java.util.logging.Logger;
-import java.util.logging.SimpleFormatter;
 
-import org.bukkit.block.Block;
 import org.bukkit.event.Event;
+import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import com.github.The414s.util.T4Formatter;
+
 public class PoisonFood extends JavaPlugin {
 
-	protected Logger mlog = Logger.getLogger("Minecraft");
-	protected Logger log;
+	protected Logger log = Logger.getLogger("Minecraft");
+	protected Logger debug = Logger.getLogger("PoisonFood");
 	private final PoisonFoodPlayerListener playerListener = new PoisonFoodPlayerListener(
 			this);
 	static String mainDirectory = "plugins/PoisonFood";
 	protected static File config = new File(mainDirectory + File.separator
 			+ "config.cfg");
 	protected static Properties prop = new Properties();
+	PluginDescriptionFile pdfFile = this.getDescription();
 
 	@Override
 	public void onDisable() {
-		for (Handler ele : log.getHandlers()) {
-			log.removeHandler(ele);
+		this.debug.info("Plugin disabled");
+		for (Handler ele : debug.getHandlers()) {
+			debug.removeHandler(ele);
 			ele.close();
 		}
-		this.mlog.info("[PoisonFood]Plugin disabled");
+		//this.log.info("["+pdfFile.getName() + "]["
+		//		+ pdfFile.getVersion() + "] is disabled.");
 		this.log.info("[PoisonFood]Plugin disabled");
-		log = null;
+		
+		debug = null;
 	}
 
 	@Override
 	public void onEnable() {
-		//System.out.println("BlagSSSSSSSSSSSSSSSSS");
-		log = Logger.getLogger("PoisonFood");
+		
 		PluginManager pm = this.getServer().getPluginManager();
 		pm.registerEvent(Event.Type.PLAYER_INTERACT, playerListener,
 				Event.Priority.Low, this);
@@ -56,23 +60,23 @@ public class PoisonFood extends JavaPlugin {
 		}
 
 		try {
-			for (Handler ele : log.getHandlers()) {
-				log.removeHandler(ele);
+			for (Handler ele : debug.getHandlers()) {
+				debug.removeHandler(ele);
 			}
-			log.setUseParentHandlers(false);
+			debug.setUseParentHandlers(false);
 			FileHandler fh = new FileHandler("plugins/PoisonFood/plugin.log");
-			SimpleFormatter formatter = new SimpleFormatter();
-			fh.setFormatter(formatter);
-			log.addHandler(fh);
+		
+			fh.setFormatter(new T4Formatter());
+			debug.addHandler(fh);
 			
 		} catch (SecurityException e1) {
 			// TODO Auto-generated catch block
-			this.mlog.warning("[PoisonFood] Error #5");
 			this.log.warning("[PoisonFood] Error #5");
+			this.debug.warning(" Error #5");
 		} catch (IOException e1) {
 			// TODO Auto-generated catch block
-			this.mlog.warning("[PoisonFood] Error #6");
 			this.log.warning("[PoisonFood] Error #6");
+			this.debug.warning(" Error #6");
 		}
 		if (!config.exists()) {
 			try {
@@ -103,24 +107,27 @@ public class PoisonFood extends JavaPlugin {
 				prop.store(out, null);
 				out.flush();
 				out.close();
+				debug.info("Created Config.cfg");
 				log.info("[PoisonFood]Created Config.cfg");
-				mlog.info("[PoisonFood]Created Config.cfg");
 			} catch (IOException ex) {
-				this.mlog.warning("[PoisonFood] Error #2");
-				this.log.warning("[PoisonFood] Error #2: " + ex.getMessage());
+				this.log.warning("[PoisonFood] Error #2");
+				this.debug.warning(" Error #2: " + ex.getMessage());
 
 			}
 		} else {
 			try {
 				prop.load(new FileInputStream(config));
 			} catch (FileNotFoundException e) {
-				this.mlog.warning("[PoisonFood] Error #3");
-				this.log.warning("[PoisonFood] Error #3: " + e.getMessage());
+				this.log.warning("[PoisonFood] Error #3");
+				this.debug.warning(" Error #3: " + e.getMessage());
 			} catch (IOException e) {
-				this.log.warning("[PoisonFood] Error #4: " + e.getMessage());
-				this.mlog.warning("[PoisonFood] Error #4");
+				this.debug.warning(" Error #4: " + e.getMessage());
+				this.log.warning("[PoisonFood] Error #4");
 			}
-			this.mlog.info("[PoisonFood] Plugin enabled");
+			
+			//this.mlog.info("["+pdfFile.getName() + "]["
+			//		+ pdfFile.getVersion() + "] is enabled.");
+			this.debug.info(" Plugin enabled");
 			this.log.info("[PoisonFood] Plugin enabled");
 		}
 	}

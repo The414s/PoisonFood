@@ -1,29 +1,7 @@
-<<<<<<< HEAD
 name: PoisonFood
-main: com.github.TeamRa.PoisonFood.PoisonFood
-version: 1.0
-=======
-name: FactoryFurnace
-main: com.github.TeamRA.FactoryFurnace.FactoryFurnace
-version: 0.2
-website: 
+main: com.github.The414s.PoisonFood.PoisonFood
+version: 1.1
+website: the414s.github.com
 authors:
-  - TeamRA
-description: An Auto-Reloading furnace plug-in
-commands:
-  FactoryFurnace:
-    description: <add>adds a furnace; <remove>removes a furnace; <info>returns info on a furnace
-    usage: /FactoryFurnace <add|remove|info> [Player name]
-  ffa:
-    description: adds a furnace
-    usage: /ffa [Player name]
-    permission: FactoryFurnace.add
-  ffr:
-    description: removes a furnace
-    usage: /ffr
-    permission: FactoryFurnace.remove
-  ffi:
-    description: get info about a furnace
-    usage: /ffi
-    permission: FactoryFurnace.info  
->>>>>>> f412083b070829f621a6fd54eb451fb89b02dce7
+  - The414s
+description: Lets Poison Some Food
