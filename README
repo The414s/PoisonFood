@@ -24,8 +24,7 @@ ________________________________________________________________
 2.Dependencies
 ________________________________________________________________
 
-The414sUtilityLibrary 1.0.jar 
->>github.com/downloads/The414s/The414sUtilityLibrary/The414sUtilityLibrary%201.0.jar
+none
 ________________________________________________________________
 3.Compatibility     
 ________________________________________________________________
@@ -43,6 +42,17 @@ Poison*Chance = chance out of 100 that it will be poisoned
 Poison*Damage = amount of damage dealt to the player
 Damage is measured in half hearts i.e. 5 = 2.5Hearts
 
+Permissions:
+PoisonFood.immunity.cake
+PoisonFood.immunity.cookie
+PoisonFood.immunity.rawFish
+PoisonFood.immunity.cookedFish
+PoisonFood.immunity.rawPork
+PoisonFood.immunity.cookedPork
+PoisonFood.immunity.apple
+PoisonFood.immunity.goldenApple
+PoisonFood.immunity.soup
+PoisonFood.immunity.bread
 ________________________________________________________________
 5.Bugs and Features
 ________________________________________________________________
@@ -56,6 +66,7 @@ ________________________________________________________________
 6.Changelog
 ________________________________________________________________
 
+1.2 - added yml,permissions
 1.1 - Fixed Namespace
 1.0 - Release
 ________________________________________________________________
@@ -79,5 +90,6 @@ ________________________________________________________________
 7.Download
 ________________________________________________________________
 
+1.2 - http://github.com/downloads/The414s/PoisonFood/PoisonFood%201.2.jar
 1.1 - http://github.com/downloads/The414s/PoisonFood/PoisonFood%201.1.jar
-1.0 - here
+1.0 - 
